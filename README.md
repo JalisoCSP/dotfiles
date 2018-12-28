@@ -1,6 +1,6 @@
 # Craig's dotfiles
 
-Inspired by [r00k](https://github.com/r00k/dotfiles)
+Inspired by [r00k's dotfile](https://github.com/r00k/dotfiles)
 
 ## Install
 
@@ -13,5 +13,6 @@ rake install
 ## More
 
 Check out my personal site: https://craigpetterson.co.uk
-Following me on twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
+
+Following me on Twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
 
