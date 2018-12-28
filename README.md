@@ -1,7 +1,17 @@
 # Craig's dotfiles
 
-Using:
-- Pathogen https://github.com/tpope/vim-pathogen
-- Vim Rails https://github.com/tpope/vim-rails
-- Ctrl P https://github.com/kien/ctrlp.vim
-- Golden Ratio https://github.com/roman/golden-ratio
+Inspired by [r00k](https://github.com/r00k/dotfiles)
+
+## Install
+
+```
+git clone https://github.com/JalisoCSP/dotfiles ~/.dotfiles
+cd ~/.dotfiles
+rake install
+```
+
+## More
+
+Check out my personal site: https://craigpetterson.co.uk
+Following me on twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
+
