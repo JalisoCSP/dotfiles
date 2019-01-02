@@ -39,4 +39,14 @@ map <Leader>r :execute "!bin/rspec %"
 command! Q q
 command! E e
 command! W w
+  
+command -nargs=+ Vg call VimgrepHelperFunc(<f-args>)
+function VimgrepHelperFunc(...)
+  if a:0 > 1
+    let filetype=a:2
+  else
+    let filetype='rb'
+  endif
+  execute 'vimgrep ' . a:1 . ' **/*.' . filetype
+endfunction
 
