@@ -36,3 +36,8 @@ imap jj <esc>
 map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
 
+command -nargs=+ Vg :vimgrep <args> **/*.rb
+command! Q q
+command! E e
+command! W w
+
