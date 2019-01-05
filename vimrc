@@ -35,6 +35,7 @@ let mapleader = ","
 imap jj <esc>
 map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
+map <Leader>t :execute "!rails test"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
 
 command! Q q
