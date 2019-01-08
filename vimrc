@@ -36,13 +36,14 @@ imap jj <esc>
 map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
+map <Leader>y "+y
 
 command! Q q
 command! E e
 command! W w
-  
-command -nargs=+ Vg call VimgrepHelperFunc(<f-args>)
-function VimgrepHelperFunc(...)
+
+command! -nargs=+ Vg call VimgrepHelperFunc(<f-args>)
+function! VimgrepHelperFunc(...)
   if a:0 > 1
     let filetype=a:2
   else
@@ -51,3 +52,6 @@ function VimgrepHelperFunc(...)
   execute 'vimgrep ' . a:1 . ' **/*.' . filetype
 endfunction
 
+highlight ws ctermbg=DarkGrey guibg=DarkGrey
+match ws /\s\+$/
+autocmd BufWinEnter * match ws / \+$/
