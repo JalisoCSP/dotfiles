@@ -37,6 +37,7 @@ map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
 map <Leader>t :execute "!rails test"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
+" https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
 
 command! Q q
@@ -50,9 +51,17 @@ function! VimgrepHelperFunc(...)
   else
     let filetype='rb'
   endif
-  execute 'vimgrep ' . a:1 . ' **/*.' . filetype
+  execute ':vimgrep "' . a:1 . '" **/*.' . filetype
 endfunction
 
 highlight ws ctermbg=DarkGrey guibg=DarkGrey
 match ws /\s\+$/
 autocmd BufWinEnter * match ws / \+$/
+
+" Resize windows when moving window position
+" https://github.com/roman/golden-ratio/issues/32
+nnoremap <C-w>H <C-w>H:GoldenRatioResize<CR>
+nnoremap <C-w>L <C-w>L:GoldenRatioResize<CR>
+nnoremap <C-w>J <C-w>J:GoldenRatioResize<CR>
+nnoremap <C-w>K <C-w>K:GoldenRatioResize<CR>
+
