@@ -39,6 +39,7 @@ map <Leader>t :execute "!rails test"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
+map <Leader>p "+p
 
 command! Q q
 command! E e
