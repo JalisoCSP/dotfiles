@@ -33,6 +33,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 let mapleader = ","
 imap jj <esc>
+map <Leader>w :w<cr>:execute "!bin/rspec %"<CR>
 map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
 map <Leader>t :execute "!rails test"
