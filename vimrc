@@ -9,7 +9,6 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 end
 let g:ctrlp_match_window = 'min:1,max:50'
-let g:ctrlp_max_files = 20000
 
 set nocompatible
 set ruler
