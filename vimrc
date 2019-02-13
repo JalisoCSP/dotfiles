@@ -13,6 +13,7 @@ let g:ctrlp_match_window = 'min:1,max:50'
 set nocompatible
 set ruler
 set colorcolumn=120
+set textwidth=80
 set showcmd
 set cmdheight=2
 set number
@@ -46,6 +47,7 @@ command! Q q
 command! E e
 command! W w
 command! Vs vs
+command! Wq wq
 
 command! -nargs=+ Vg call VimgrepHelperFunc(<f-args>)
 function! VimgrepHelperFunc(...)
