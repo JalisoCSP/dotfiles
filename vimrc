@@ -10,9 +10,14 @@ if executable('ag')
 end
 let g:ctrlp_match_window = 'min:1,max:50'
 
+set runtimepath^=~/.dotfiles/vim/bundle/ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 set nocompatible
 set ruler
-set colorcolumn=120
+set colorcolumn=80
 set textwidth=80
 set showcmd
 set cmdheight=2
@@ -38,6 +43,7 @@ map <Leader>w :w<cr>:execute "!bin/rspec %"<CR>
 map <Leader>rr :execute "!bin/rspec %:" . line(".")
 map <Leader>r :execute "!bin/rspec %"
 map <Leader>t :execute "!rails test"
+map <Leader>b :execute "!git blame %"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
@@ -57,6 +63,11 @@ function! VimgrepHelperFunc(...)
     let filetype='rb'
   endif
   execute ':vimgrep "' . a:1 . '" **/*.' . filetype
+endfunction
+
+command! -nargs=+ Gr call GlobalSearchAndReplaceFunc(<f-args>)
+function! GlobalSearchAndReplaceFunc(...)
+  execute 'args `grep -r -l ' . a:1 . ' app/ spec/ lib/` | argdo %s/' . a:1 . '/' . a:2 . '/gI | update'
 endfunction
 
 highlight ws ctermbg=DarkGrey guibg=DarkGrey
