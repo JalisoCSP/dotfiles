@@ -40,8 +40,8 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 let mapleader = ","
 imap jj <esc>
 map <Leader>w :w<cr>:execute "!bin/rspec %"<CR>
-map <Leader>rr :execute "!bin/rspec %:" . line(".")
-map <Leader>r :execute "!bin/rspec %"
+map <Leader>r :execute "!bin/rspec %:" . line(".")
+map <Leader>rr :execute "!bin/rspec %"
 map <Leader>t :execute "!rails test"
 map <Leader>b :execute "!git blame %"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
