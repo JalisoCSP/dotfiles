@@ -73,11 +73,3 @@ endfunction
 highlight ws ctermbg=DarkGrey guibg=DarkGrey
 match ws /\s\+$/
 autocmd BufWinEnter * match ws / \+$/
-
-" Resize windows when moving window position
-" https://github.com/roman/golden-ratio/issues/32
-nnoremap <C-w>H <C-w>H:GoldenRatioResize<CR>
-nnoremap <C-w>L <C-w>L:GoldenRatioResize<CR>
-nnoremap <C-w>J <C-w>J:GoldenRatioResize<CR>
-nnoremap <C-w>K <C-w>K:GoldenRatioResize<CR>
-
