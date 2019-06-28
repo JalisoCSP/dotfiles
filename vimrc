@@ -39,7 +39,8 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 let mapleader = ","
 imap jj <esc>
-map <Leader>w :w<cr>:execute "!bin/rspec %"<CR>
+map <Leader>w :w<cr>:execute "!bin/rspec %:" . line(".")<CR>
+map <Leader>ww :w<cr>:execute "!bin/rspec %"<CR>
 map <Leader>r :execute "!bin/rspec %:" . line(".")
 map <Leader>rr :execute "!bin/rspec %"
 map <Leader>t :execute "!rails test"
@@ -48,6 +49,9 @@ map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bund
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
 map <Leader>p "+p
+map <Leader>. :e ~/.dotfiles/vimrc
+map <Leader>d :e db/schema.rb
+map <Leader>db :e config/database.yml
 
 command! Q q
 command! E e
