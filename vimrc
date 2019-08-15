@@ -43,14 +43,17 @@ map <Leader>w :w<cr>:execute "!bin/rspec %:" . line(".")<CR>
 map <Leader>ww :w<cr>:execute "!bin/rspec %"<CR>
 map <Leader>r :execute "!bin/rspec %:" . line(".")
 map <Leader>rr :execute "!bin/rspec %"
-map <Leader>t :execute "!rails test"
+map <Leader>rs :execute "!bin/rspec"
+map <Leader>pp :execute "!bin/rails parallel:prepare"
+map <Leader>rp :execute "!bin/rails parallel:spec"
+map <Leader>t :execute "!bin/rails test"
 map <Leader>b :execute "!git blame %"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
 map <Leader>p "+p
 map <Leader>. :e ~/.dotfiles/vimrc
-map <Leader>d :e db/schema.rb
+map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
 
 command! Q q
