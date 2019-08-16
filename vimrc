@@ -57,6 +57,7 @@ map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
 
 command! Q q
+command! Qall qall
 command! E e
 command! W w
 command! Vs vs
