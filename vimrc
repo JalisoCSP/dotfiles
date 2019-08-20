@@ -1,6 +1,8 @@
 execute pathogen#infect()
 syntax on
 colorscheme sublimemonokai
+hi StatusLine ctermbg=178 ctermfg=black cterm=NONE
+hi StatusLineNC ctermbg=8 ctermfg=178 cterm=NONE
 
 " ctrl p
 if executable('ag')
