@@ -1,6 +1,7 @@
 execute pathogen#infect()
 syntax on
 colorscheme sublimemonokai
+
 hi StatusLine ctermbg=178 ctermfg=black cterm=NONE
 hi StatusLineNC ctermbg=8 ctermfg=178 cterm=NONE
 
@@ -57,6 +58,7 @@ map <Leader>p "+p
 map <Leader>. :e ~/.dotfiles/vimrc
 map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
+map <Leader>n :e ~/Documents/notes
 
 command! Q q
 command! Qall qall
