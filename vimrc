@@ -55,6 +55,9 @@ map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bund
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
 map <Leader>p "+p
+map <Leader>f <C-w><bar>
+map <Leader>e <C-w>=
+
 map <Leader>. :e ~/.dotfiles/vimrc
 map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
