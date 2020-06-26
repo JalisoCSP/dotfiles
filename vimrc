@@ -26,7 +26,7 @@ set showcmd
 set cmdheight=2
 set number
 set relativenumber
-set nowrap
+" set nowrap
 set hlsearch
 set incsearch
 set ignorecase smartcase
