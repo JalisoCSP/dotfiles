@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+  email = cspetterson@hey.com
+  name = Craig Petterson
+[core]
+  editor = vim
+[github]
+  user = JalisoCSP
+[fetch]
+  prune = true
