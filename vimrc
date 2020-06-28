@@ -59,7 +59,7 @@ map <Leader>e <C-w>=
 map <Leader>. :e ~/.dotfiles/vimrc
 map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
-map <Leader>n :e ~/Documents/notes
+map <Leader>n :e ~/Documents/Notes/main.txt
 
 command! Q q
 command! Qall qall
