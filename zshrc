@@ -16,7 +16,9 @@ alias gpom='git pull origin master'
 alias gco='git checkout'
 alias gcl='git clone'
 
+alias dotfiles='cd ~/.dotfiles'
 alias aliases='vim ~/.dotfiles/zshrc'
+alias vimrc='vim ~/.dotfiles/vimrc'
 alias mux='tmuxinator'
 
 # projects
