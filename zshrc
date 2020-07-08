@@ -3,8 +3,14 @@ export EDITOR=vim
 # rbenv
 eval "$(rbenv init -)"
 
+# rails
+alias rs='rails server'
+alias rc='rails console'
+
 # git
 alias gs='git status'
+alias gb='git branch'
+alias gl='git log'
 alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -v'
@@ -31,6 +37,7 @@ alias vimrc='vim ~/.dotfiles/vimrc'
 
 # notes
 alias notes='vim ~/Documents/Notes/main.txt'
+alias billing='vim ~/Documents/Notes/billing.txt'
 alias stew='vim ~/Documents/Notes/stew.txt'
 alias mary='vim ~/Documents/Notes/mary.txt'
 
