@@ -6,6 +6,9 @@ eval "$(rbenv init -)"
 # rails
 alias rs='rails server'
 alias rc='rails console'
+alias rdbm='rails db:migrate'
+alias rdbr='rails db:rollback'
+alias rdbre='rails db:migrate:redo'
 
 # git
 alias gs='git status'
