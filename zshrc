@@ -26,6 +26,7 @@ alias gpom='git pull origin master'
 alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcl='git clone'
+alias grh='git reset --hard'
 
 # projects
 alias work='cd ~/workspace'
