@@ -39,6 +39,8 @@ alias dotfiles='cd ~/.dotfiles'
 alias aliases='vim ~/.dotfiles/zshrc'
 alias vimrc='vim ~/.dotfiles/vimrc'
 
+alias rnr='bundle exec rspec && rubocop'
+
 # notes
 alias notes='vim ~/Documents/Notes/main.txt'
 alias billing='vim ~/Documents/Notes/billing.txt'
