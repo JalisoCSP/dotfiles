@@ -32,6 +32,7 @@ alias grh='git reset --hard'
 alias work='cd ~/workspace'
 alias apollo='cd ~/workspace/apollo'
 alias doorguard='cd ~/workspace/doorguard'
+alias zap='cd ~/workspace/zapnito/zapnito'
 
 # misc
 alias mux='tmuxinator'
@@ -47,3 +48,8 @@ alias billing='vim ~/Documents/Notes/billing.txt'
 alias stew='vim ~/Documents/Notes/stew.txt'
 alias mary='vim ~/Documents/Notes/mary.txt'
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=/opt/homebrew/bin:$PATH # homebrew
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH" # ruby
