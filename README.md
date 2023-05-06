@@ -15,4 +15,3 @@ rake install
 Check out my personal site: https://craigpetterson.co.uk
 
 Following me on Twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
-
