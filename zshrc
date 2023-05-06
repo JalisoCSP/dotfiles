@@ -1,7 +1,15 @@
 export EDITOR=vim
 
-# rbenv
-eval "$(rbenv init -)"
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
+# ASDF
+. "$HOME/.asdf/asdf.sh"
+
+# libffi
+export LDFLAGS="-L/usr/local/opt/libffi/lib"
+export CPPFLAGS="-I/usr/local/opt/libffi/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # rails
 alias rs='rails server'
@@ -47,13 +55,3 @@ alias notes='vim ~/Documents/Notes/main.txt'
 alias billing='vim ~/Documents/Notes/billing.txt'
 alias stew='vim ~/Documents/Notes/stew.txt'
 alias mary='vim ~/Documents/Notes/mary.txt'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH=/usr/local/bin:$PATH # homebrew
-
-# libffi
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export CPPFLAGS="-I/usr/local/opt/libffi/include"
-export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
