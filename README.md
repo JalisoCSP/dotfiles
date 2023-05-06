@@ -5,7 +5,7 @@ Inspired by [r00k's dotfile](https://github.com/r00k/dotfiles)
 ## Install
 
 ```
-git clone https://github.com/JalisoCSP/dotfiles ~/.dotfiles
+git clone git@github.com:JalisoCSP/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 rake install
 ```

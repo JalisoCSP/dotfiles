@@ -6,6 +6,7 @@ export PATH=/usr/local/bin:$PATH
 # ASDF
 . "$HOME/.asdf/asdf.sh"
 
+# Rosetta flags
 # libffi
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 export CPPFLAGS="-I/usr/local/opt/libffi/include"
