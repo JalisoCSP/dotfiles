@@ -2,14 +2,14 @@
 [user]
   email = cspetterson@hey.com
   name = Craig Petterson
+[github]
+  user = JalisoCSP
 [core]
   editor = vim
   excludesfile = ~/.gitignore
-[github]
-  user = JalisoCSP
 [fetch]
   prune = true
 [pull]
   rebase = false
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
