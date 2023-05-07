@@ -8,3 +8,5 @@
   user = JalisoCSP
 [fetch]
   prune = true
+[pull]
+  rebase = false
