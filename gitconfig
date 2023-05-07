@@ -4,6 +4,7 @@
   name = Craig Petterson
 [core]
   editor = vim
+  excludesfile = ~/.gitignore
 [github]
   user = JalisoCSP
 [fetch]
