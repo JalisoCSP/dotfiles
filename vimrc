@@ -56,6 +56,9 @@ map <Leader>p "+p
 map <Leader>f <C-w><bar>
 map <Leader>e <C-w>=
 
+" Disable K looking stuff up
+map K <Nop>
+
 map <Leader>. :e ~/.dotfiles/vimrc
 map <Leader>s :e db/schema.rb
 map <Leader>db :e config/database.yml
