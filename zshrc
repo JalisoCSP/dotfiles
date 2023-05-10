@@ -49,6 +49,7 @@ alias dotfiles='cd ~/.dotfiles'
 alias aliases='vim ~/.dotfiles/zshrc'
 alias vimrc='vim ~/.dotfiles/vimrc'
 
+alias killrails='sudo kill $(sudo losf -t -i:3000)'
 alias rnr='bundle exec rspec && rubocop'
 
 # notes
