@@ -2,6 +2,7 @@ export EDITOR=vim
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
+export HOMEBREW_AUTO_UPDATE_SECS=600000
 
 # ASDF
 . "$HOME/.asdf/asdf.sh"
