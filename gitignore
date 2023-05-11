@@ -1,2 +1,13 @@
 .DS_Store
-tags
+/tags
+
+.bundle
+.byebug_history
+.env
+.git/
+
+/log
+/node_modules/
+/tmp
+
+db/*.sqlite3
