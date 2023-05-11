@@ -5,6 +5,10 @@ export PATH=/usr/local/bin:$PATH
 
 # ASDF
 . "$HOME/.asdf/asdf.sh"
+# Add PATH for tmux
+# https://github.com/thoughtbot/dotfiles/issues/587#issuecomment-368998454
+PATH="$HOME/.asdf/bin:$PATH"
+PATH="$HOME/.asdf/shims:$PATH"
 
 # Rosetta flags
 # libffi
