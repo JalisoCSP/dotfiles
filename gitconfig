@@ -10,7 +10,7 @@
 [push]
   autoSetupRemote = true
 [pull]
-  rebase = true
+  rebase = false
 [rebase]
   autosquash = true
 [fetch]
