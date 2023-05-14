@@ -12,8 +12,8 @@ PATH="$HOME/.asdf/bin:$PATH"
 PATH="$HOME/.asdf/shims:$PATH"
 
 # Load Git completion
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/.dotfiles/zsh/git-completion.bash
+fpath=(~/.dotfiles/zsh $fpath)
 autoload -Uz compinit && compinit
 
 # Rosetta flags
