@@ -11,6 +11,11 @@ export HOMEBREW_AUTO_UPDATE_SECS=600000
 PATH="$HOME/.asdf/bin:$PATH"
 PATH="$HOME/.asdf/shims:$PATH"
 
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit && compinit
+
 # Rosetta flags
 # libffi
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
