@@ -2,9 +2,19 @@ export EDITOR=vim
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
+export HOMEBREW_AUTO_UPDATE_SECS=600000
 
 # ASDF
 . "$HOME/.asdf/asdf.sh"
+# Add PATH for tmux
+# https://github.com/thoughtbot/dotfiles/issues/587#issuecomment-368998454
+PATH="$HOME/.asdf/bin:$PATH"
+PATH="$HOME/.asdf/shims:$PATH"
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.dotfiles/zsh/git-completion.bash
+fpath=(~/.dotfiles/zsh $fpath)
+autoload -Uz compinit && compinit
 
 # Rosetta flags
 # libffi
@@ -49,6 +59,7 @@ alias dotfiles='cd ~/.dotfiles'
 alias aliases='vim ~/.dotfiles/zshrc'
 alias vimrc='vim ~/.dotfiles/vimrc'
 
+alias killrails='sudo kill $(sudo losf -t -i:3000)'
 alias rnr='bundle exec rspec && rubocop'
 
 # notes
