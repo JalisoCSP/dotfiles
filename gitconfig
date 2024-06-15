@@ -9,7 +9,9 @@
   excludesfile = ~/.gitignore
 [fetch]
   prune = true
-[pull]
-  rebase = true
 [push]
   autoSetupRemote = true
+[pull]
+  rebase = false
+[rebase]
+  autosquash = true
