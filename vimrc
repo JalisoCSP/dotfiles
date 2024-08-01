@@ -50,9 +50,15 @@ map <Leader>rs :execute "!rspec"
 map <Leader>t :execute "!rails test"
 map <Leader>b :execute "!git blame %"
 map <Leader>ct :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
+
+" Remove trailing whitespace                                                        
+map <Leader>ws :%s/\s\+$//e 
+
 " https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 map <Leader>y "+y
 map <Leader>p "+p
+
+" Pane resizing (f: full, e: equal)
 map <Leader>f <C-w><bar>
 map <Leader>e <C-w>=
 
