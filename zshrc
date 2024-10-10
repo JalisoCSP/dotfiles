@@ -47,6 +47,9 @@ alias gcom='git checkout master'
 alias gcl='git clone'
 alias grh='git reset --hard'
 
+# https://kamal-deploy.org/docs/installation/
+alias kamal='docker run -it --rm -v "${PWD}:/workdir" -v "/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock" -e SSH_AUTH_SOCK="/run/host-services/ssh-auth.sock" -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/basecamp/kamal:latest'
+
 # projects
 alias work='cd ~/workspace'
 alias apollo='cd ~/workspace/apollo'
